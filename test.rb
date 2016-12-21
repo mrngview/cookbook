@@ -1,18 +1,12 @@
-require_relative "cookbook"
-require_relative "view"
-require_relative "controller"
+require 'nokogiri'
+require 'open-uri'
 
+html_data = open('test.html').read
+nokogiri_object = Nokogiri::HTML(html_data)
+tagcloud_elements = nokogiri_object.css("ul.tagcloud > li > a")
 
-file_path = "recipes.csv"
-cookbook = Cookbook.new(file_path)
-vista = View.new
-recipe_test = Recipe.new("test", "test")
-controller = Controller.new(cookbook)
+p tagcloud_elements
 
-#controller.create
-#puts "------------------------------"
-controller.list
-puts "------------------------------"
-controller.destroy
-puts "------------------------------"
-controller.list
+tagcloud_elements.each do |tagcloud_element|
+  puts tagcloud_element.text
+end

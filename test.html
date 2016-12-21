@@ -1,0 +1,1121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app7.us.archive.org";archive_analytics.values.server_ms=4165;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+
+	<title>SitePoint : New Articles, Fresh Thinking for Web Developers and Designers</title>
+
+
+
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="robots" content="all" />
+	<meta name="description" content="SitePoint.com - With a vast variety of web design tutorials and articles coupled with a vibrant and well informed community, SitePoint the natural place to go to grow your online business" />
+	<meta name="keywords" content="CSS positioning, XHTML standards, ajax development, tableless design, accessability, freelance web design, PHP MySQL tutorial, page tutorial, ruby on rails, teaching dotnet, standards compliant, " />
+	<link rel="shortcut icon" href="/web/20090220003702im_/http://www.sitepoint.com/favicon.ico" />
+	<link rel="stylesheet" type="text/css" media="all" href="/web/20090220003702cs_/http://1.sitepointstatic.com/bundle/structure.css,standard.css,format.css,tabs-v5.css,cart.css,print.css,index.css,promo.css" />
+
+		<link rel="alternate" type="application/rdf+xml" title="RSS - Articles" href="/recent.rdf" />
+	<link rel="alternate" type="text/xml" title="RSS - News" href="/blogs/category/news/feed/" />
+	<link rel="alternate" type="application/rdf+xml" title="RSS - Blogs" href="/blogs.rdf" />
+	<link rel="alternate" type="application/rdf+xml" title="RSS - Forums" href="/forums/featured.rdf" />
+	<link rel="alternate" type="application/rdf+xml" title="RSS - Books" href="/books.rdf" />
+	<link rel="apple-touch-icon" href="/images/icons/apple-touch-icon.png" />
+
+
+	<script src="/web/20090220003702js_/http://2.sitepointstatic.com/bundle/utilities.js,sortable.js" type="text/javascript"></script>
+	<script src="/web/20090220003702js_/http://2.sitepointstatic.com/js/sitepoint-ref-links.js" type="text/javascript"></script>
+
+<link rel="stylesheet" type="text/css" href="/web/20090220003702cs_/http://1.sitepointstatic.com/css2/newindex.css"/>
+<!--[if lt IE 8]>
+<link rel="stylesheet" type="text/css" media="all" href="/css2/newindex-ie7.css" />
+<![endif]-->
+<!--[if lt IE 7]>
+<link rel="stylesheet" type="text/css" media="all" href="/css2/newindex-ie6.css" />
+<![endif]-->
+
+<!--[if IE]>
+<link rel="stylesheet" type="text/css" media="all" href="/css2/ie.css" />
+<![endif]-->
+<!--[if IE7]>
+<![endif]-->
+<!--[if lt IE 7]>
+<link rel="stylesheet" type="text/css" media="all" href="/css2/ie6.css" />
+<![endif]-->
+<!--[if lt IE 6]>
+<link rel="stylesheet" type="text/css" media="all" href="/css2/ie5.css" />
+<![endif]-->
+
+<script type="text/javascript" src="/web/20090220003702js_/http://sitepointstatic.com/js/layoutbanner.js"></script>
+
+
+
+</head>
+
+  <body>
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(imgWidth,imgHeight,yearImgWidth,monthImgWidth){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://www.sitepoint.com/";
+
+var firstYear = 1996;
+var displayDay = "20";
+var displayMonth = "Feb";
+var displayYear = "2009";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})(525, 27, 25, 2);//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://www.sitepoint.com/" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20090220003702" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+
+		    <a href="/web/20090118084249/http://www.sitepoint.com/" title="18 Jan 2009">JAN</a>
+
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 0:37:02 Feb 20, 2009">FEB</td>
+		<td class="f" nowrap="nowrap">
+
+		    <a href="/web/20090321214702/http://www.sitepoint.com/" title="21 Mar 2009"><strong>MAR</strong></a>
+
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+
+                   <a href="/web/20090218181421/http://www.sitepoint.com/" title="18:14:21 Feb 18, 2009"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 0:37:02 Feb 20, 2009">20</td>
+	       <td class="f" nowrap="nowrap">
+
+		   <a href="/web/20090222000432/http://www.sitepoint.com/" title="0:04:32 Feb 22, 2009"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a>
+
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+
+                   <a href="/web/20080218234733/http://www.sitepoint.com/" title="18 Feb 2008"><strong>2008</strong></a>
+
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 0:37:02 Feb 20, 2009">2009</td>
+	       <td class="f" nowrap="nowrap">
+
+	           <a href="/web/20100220234733/http://www.sitepoint.com/" title="20 Feb 2010"><strong>2010</strong></a>
+
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20090220003702*/http://www.sitepoint.com/" title="See a list of every capture for this URL">5,896 captures</a>
+           <div class="r" title="Timespan for captures of this URL">10 May 00 - 19 Dec 16</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="525"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=525_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000046121436_2001:-1:5243a9643000_2002:-1:202041114020_2003:-1:123322201413_2004:-1:10011aa8a688_2005:-1:7abaaccda9bc_2006:-1:d91915762347_2007:-1:877487388a05_2008:-1:886550033227_2009:1:897222776506_2010:-1:867777898aa9_2011:-1:aa9999996999_2012:-1:a889a8899998_2013:-1:9899968876cf_2014:-1:edddddddcdde_2015:-1:e9ddadac9cde_2016:-1:eded9daeeedd" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+
+
+<div id="header">
+	<h1>
+		<a href="/web/20090220003702/http://www.sitepoint.com/"><span></span>SitePoint</a>
+	</h1>
+
+	<!-- Search -->
+
+	 	<form method="get" action="/web/20090220003702/http://www.sitepoint.com/search/search.php"  id="search">
+	<div>
+		<label for="mainsearchbox">Search Site</label>
+		<input type="hidden" name="ps" value="10" />
+		<input id="mainsearchbox" type="text" name="q" value="" class="tbox" />
+		<input type="submit" value="Search" name="submit" class="button" />
+		<ul id="searchlinks">
+		<li><a href="/web/20090220003702/http://www.sitepoint.com/search/">Advanced Search</a></li>
+		<li><a href="/web/20090220003702/http://www.sitepoint.com/sitemap">Sitemap</a></li>
+		</ul>
+	</div>
+	</form>
+
+
+
+	<!-- /Search -->
+</div>
+
+  <!-- navigation bar -->
+  <div id="navcontainer">
+
+	<ul id="navlist">
+		<li><a id="tabz" class="active" href="/web/20090220003702/http://www.sitepoint.com/" title="The best place to begin your SitePoint session">Home</a></li>
+		<li><a id="taba"  href="/web/20090220003702/http://www.sitepoint.com/recentarticles/" title="One of the Web&rsquo;s largest repositories of web know-how">Articles</a></li>
+		<li><a id="tabb"  href="/web/20090220003702/http://www.sitepoint.com/books/" title="SitePoint&rsquo;s renowned web development books">Books</a></li>
+		<li><a id="tabc"  href="/web/20090220003702/http://www.sitepoint.com/kits/" title="SitePoint&rsquo;s renowned web development kits">Kits</a></li>
+		<li><a id="tabd"  href="/web/20090220003702/http://www.sitepoint.com/videos/" title="SitePoint&rsquo;s renowned web development training videos">Videos</a></li>
+		<li><a id="tabe"  href="/web/20090220003702/http://www.sitepoint.com/blogs/" title="Daily comment across a range of web subjects by some of the top experts in their field">Blogs</a></li>
+		<li><a id="tabf"  href="/web/20090220003702/http://www.sitepoint.com/contest/" title="Let designers compete for your business in SitePoint&rsquo;s Design Contests">Contests</a></li>
+		<li><a id="tabg"  href="/web/20090220003702/http://marketplace.sitepoint.com/" title="Buy and sell goods and services in one of the world&rsquo;s largest web communities">Marketplace</a></li>
+		 <li><a accesskey="6" id="tabh"  href="/web/20090220003702/http://www.sitepoint.com/forums/" title="Our friendly, vibrant and well-informed community">Forums</a></li>
+		 <li><a accesskey="9" id="tabi"  href="/web/20090220003702/http://reference.sitepoint.com/" title="The Web&rsquo;s most complete and up-to-date reference">Reference </a></li>
+	</ul>
+
+<!-- reload -->
+	</div>
+
+<!-- /nav  -->
+
+<div id="content"  class="clearfix">
+
+<div id="body" class="siteindex">
+	<div id="features">
+		        <div id="feature" class="feature story">
+            <div class="header">
+                <h2><span class="structural-label">Feature Story:</span> <a href="/web/20090220003702/http://www.sitepoint.com/article/simply-sql-the-from-clause/">Simply SQL: The FROM Clause</a></h2>
+                <dl class="storymeta">
+                    <dt class="type">Type</dt>
+										<dd class="type">article</dd>
+					<dt class="author">Author</dt>
+					<dd class="author">Rudy Limeback</dd>
+										<dt class="comments">Comments</dt>
+                    <dd class="comments">
+																		<a href="/web/20090220003702/http://www.sitepoint.com/forums/showthread?t=601113" title="1 comment for &quot;Simply SQL: The FROM Clause&quot;">(1 comment)</a>
+																</dd>
+                </dl>
+            </div>
+            <div class="featureimg"><a href="/web/20090220003702/http://www.sitepoint.com/article/simply-sql-the-from-clause/"><img src="/web/20090220003702im_/http://i2.sitepoint.com/graphics/1704_sql1_article_pic-resized-115.png" alt=""/></a></div>
+            <p class="blurb">
+                Have trouble remembering your right outer joins from your left? In this sample chapter from the SitePoint book, Simply SQL, Rudy makes the inner workings of the SQL FROM clause easy to understand, including joins, subqueries, and views.
+                <a href="/web/20090220003702/http://www.sitepoint.com/article/simply-sql-the-from-clause/" class="more">Read more…</a>
+            </p>
+        </div>
+		        <div id="whatshot" class="hslice">
+            <h2><span class="entry-title">Editor’s Choice</span></h2>
+        	<a rel="entry-content" href="/web/20090220003702/http://www.sitepoint.com/webslices/whatshot.php" style="display:none;"></a>
+            <ol>
+                            <li class="article">
+                	<div>
+						<a href="/web/20090220003702/http://www.sitepoint.com/article/debugging-adobe-air-application/" class="icon" title="ARTICLE: Adobe AIR: Supercharged Development with Debugging">
+							<img src="/web/20090220003702im_/http://www.sitepoint.com/images/article-icon.jpg" alt="Article" title="ARTICLE: Adobe AIR: Supercharged Development with Debugging" />
+						</a>
+						<a href="/web/20090220003702/http://www.sitepoint.com/article/debugging-adobe-air-application/" title="ARTICLE: Adobe AIR: Supercharged Development with Debugging">Adobe AIR: Supercharged Development with Debugging</a>
+						<span class="comments">
+															<span title="No comments for &quot;Adobe AIR: Supercharged Development with Debugging&quot;">(0)</span>
+													</span>
+					</div>
+				</li>
+                            <li class="blog">
+                	<div>
+						<a href="/web/20090220003702/http://www.sitepoint.com/blogs/2009/02/17/bespin-cloud-coding" class="icon" title="BLOG: Will You Code In The Cloud?">
+							<img src="/web/20090220003702im_/http://www.sitepoint.com/images/blog-icon.jpg" alt="Blog" title="BLOG: Will You Code In The Cloud?" />
+						</a>
+						<a href="/web/20090220003702/http://www.sitepoint.com/blogs/2009/02/17/bespin-cloud-coding" title="BLOG: Will You Code In The Cloud?">Will You Code In The Cloud?</a>
+						<span class="comments">
+																								<a href="/web/20090220003702/http://www.sitepoint.com/blogs/2009/02/17/bespin-cloud-coding#comments" title="18 comments for &quot;Will You Code In The Cloud?&quot;">(18)</a>
+																					</span>
+					</div>
+				</li>
+                            <li class="article">
+                	<div>
+						<a href="/web/20090220003702/http://www.sitepoint.com/article/things-dreamweaver-cs4/" class="icon" title="ARTICLE: 6 Things To Like About Dreamweaver CS4">
+							<img src="/web/20090220003702im_/http://www.sitepoint.com/images/article-icon.jpg" alt="Article" title="ARTICLE: 6 Things To Like About Dreamweaver CS4" />
+						</a>
+						<a href="/web/20090220003702/http://www.sitepoint.com/article/things-dreamweaver-cs4/" title="ARTICLE: 6 Things To Like About Dreamweaver CS4">6 Things To Like About Dreamweaver CS4</a>
+						<span class="comments">
+																								<a href="/web/20090220003702/http://www.sitepoint.com/forums/showthread?t=577650" title="14 comments for &quot;6 Things To Like About Dreamweaver CS4&quot;">(14)</a>
+																					</span>
+					</div>
+				</li>
+                            <li class="forum">
+                	<div>
+						<a href="/web/20090220003702/http://www.sitepoint.com/forums/showthread?t=595222" class="icon" title="FORUM: Why Are So Many Sites Using Gray Text?">
+							<img src="/web/20090220003702im_/http://www.sitepoint.com/images/forum-icon.jpg" alt="Forum" title="FORUM: Why Are So Many Sites Using Gray Text?" />
+						</a>
+						<a href="/web/20090220003702/http://www.sitepoint.com/forums/showthread?t=595222" title="FORUM: Why Are So Many Sites Using Gray Text?">Why Are So Many Sites Using Gray Text?</a>
+						<span class="comments">
+																								<a href="/web/20090220003702/http://www.sitepoint.com/forums/showthread?t=595222" title="156 comments for &quot;Why Are So Many Sites Using Gray Text?&quot;">(156)</a>
+																					</span>
+					</div>
+				</li>
+                            <li class="blog">
+                	<div>
+						<a href="/web/20090220003702/http://www.sitepoint.com/blogs/2009/02/06/sitepoint-podcast-8-the-case-for-web-apps" class="icon" title="BLOG: SitePoint Podcast #8: The Case For Web Apps">
+							<img src="/web/20090220003702im_/http://www.sitepoint.com/images/blog-icon.jpg" alt="Blog" title="BLOG: SitePoint Podcast #8: The Case For Web Apps" />
+						</a>
+						<a href="/web/20090220003702/http://www.sitepoint.com/blogs/2009/02/06/sitepoint-podcast-8-the-case-for-web-apps" title="BLOG: SitePoint Podcast #8: The Case For Web Apps">SitePoint Podcast #8: The Case For Web Apps</a>
+						<span class="comments">
+																								<a href="/web/20090220003702/http://www.sitepoint.com/blogs/2009/02/06/sitepoint-podcast-8-the-case-for-web-apps#comments" title="2 comments for &quot;SitePoint Podcast #8: The Case For Web Apps&quot;">(2)</a>
+																					</span>
+					</div>
+				</li>
+                        </ol>
+        </div>
+		        <div id="news" class="department hslice">
+            <h2><span class="entry-title">News &amp; Trends</span></h2>
+        	<a rel="entry-content" href="/web/20090220003702/http://www.sitepoint.com/webslices/news.php" style="display:none;"></a>
+                                    <div class="story even">
+                <h3><a href="/web/20090220003702/http://www.sitepoint.com/blogs/2009/02/20/isps-store-emails-law" title="BLOG: New Law Forces UK ISPs to Retain Your Private Emails">New Law Forces UK ISPs to Retain Your Private Emails</a></h3>
+                                    <a href="/web/20090220003702/http://www.sitepoint.com/blogs/2009/02/20/isps-store-emails-law"><img class="newsimg" src="/web/20090220003702im_/http://i2.sitepoint.com/graphics/isp-law-resized-50.jpg" alt="Image for New Law Forces UK ISPs to Retain Your Private Emails"/></a>
+                                <dl class="storymeta">
+                    <dt class="author">Author</dt>
+                    <dd class="author">Craig Buckler</dd>
+                    <dt class="date">Date</dt>
+                    <dd class="date">Feb 20th, 1:00am</dd>
+                    <dt class="comments">Comments</dt>
+                    <dd class="comments">
+																		<a href="/web/20090220003702/http://www.sitepoint.com/blogs/2009/02/20/isps-store-emails-law#comments" title="10 comments for &quot;New Law Forces UK ISPs to Retain Your Private Emails&quot;">(10 comments)</a>
+																</dd>
+                </dl>
+                <p class="blurb">
+                    On 15 March 2009, new legislation will require every UK ISP to retain your email details - including spam - for at least one year. Is this justifiable in the effort to defeat terrorism or is it an invasion of every citizen's privacy?
+                    <a href="/web/20090220003702/http://www.sitepoint.com/blogs/2009/02/20/isps-store-emails-law" class="more" title="Read more about &quot;New Law Forces UK ISPs to Retain Your Private Emails&quot;">Read more…</a>
+                </p>
+            </div>
+                        <div class="story odd">
+                <h3><a href="/web/20090220003702/http://www.sitepoint.com/blogs/2009/02/20/pay-hollywood" title="BLOG: Hollywood Actors Want $759 per Day Residuals For Online Video Content">Hollywood Actors Want $759 per Day Residuals For Online Video Content</a></h3>
+                                    <a href="/web/20090220003702/http://www.sitepoint.com/blogs/2009/02/20/pay-hollywood"><img class="newsimg" src="/web/20090220003702im_/http://i2.sitepoint.com/graphics/webmoney-resized-50.jpg" alt="Image for Hollywood Actors Want $759 per Day Residuals For Online Video Content"/></a>
+                                <dl class="storymeta">
+                    <dt class="author">Author</dt>
+                    <dd class="author">Phil Butler</dd>
+                    <dt class="date">Date</dt>
+                    <dd class="date">Feb 20th, 12:01am</dd>
+                    <dt class="comments">Comments</dt>
+                    <dd class="comments">
+																		<a href="/web/20090220003702/http://www.sitepoint.com/blogs/2009/02/20/pay-hollywood#comments" title="4 comments for &quot;Hollywood Actors Want $759 per Day Residuals For Online Video Content&quot;">(4 comments)</a>
+																</dd>
+                </dl>
+                <p class="blurb">
+                    The Screen Actors Guild wants the sweetest deal possible from online video. News today reveals a Hollywood's surreal expectations for Web revenue sharing. The studios simply cannot solve the "money equation", while the artist union makes continued demands.
+                    <a href="/web/20090220003702/http://www.sitepoint.com/blogs/2009/02/20/pay-hollywood" class="more" title="Read more about &quot;Hollywood Actors Want $759 per Day Residuals For Online Video Content&quot;">Read more…</a>
+                </p>
+            </div>
+                        <div class="story even">
+                <h3><a href="/web/20090220003702/http://www.sitepoint.com/blogs/2009/02/19/warning-6-signs-you-are-about-to-hire-a-bad-designer-or-developer" title="BLOG: Warning: 6 Signs You Are About To Hire A Bad Designer Or Developer">Warning: 6 Signs You Are About To Hire A Bad Designer Or Developer</a></h3>
+                                    <a href="/web/20090220003702/http://www.sitepoint.com/blogs/2009/02/19/warning-6-signs-you-are-about-to-hire-a-bad-designer-or-developer"><img class="newsimg" src="/web/20090220003702im_/http://i2.sitepoint.com/graphics/danger-resized-50.jpg" alt="Image for Warning: 6 Signs You Are About To Hire A Bad Designer Or Developer"/></a>
+                                <dl class="storymeta">
+                    <dt class="author">Author</dt>
+                    <dd class="author">Alyssa Gregory</dd>
+                    <dt class="date">Date</dt>
+                    <dd class="date">Feb 19th, 11:01pm</dd>
+                    <dt class="comments">Comments</dt>
+                    <dd class="comments">
+																		<a href="/web/20090220003702/http://www.sitepoint.com/blogs/2009/02/19/warning-6-signs-you-are-about-to-hire-a-bad-designer-or-developer#comments" title="2 comments for &quot;Warning: 6 Signs You Are About To Hire A Bad Designer Or Developer&quot;">(2 comments)</a>
+																</dd>
+                </dl>
+                <p class="blurb">
+                    As a companion to the post about warning signs for bad clients, this post talks about red flags clients should watch for when they are considering hiring a designer or developer.
+                    <a href="/web/20090220003702/http://www.sitepoint.com/blogs/2009/02/19/warning-6-signs-you-are-about-to-hire-a-bad-designer-or-developer" class="more" title="Read more about &quot;Warning: 6 Signs You Are About To Hire A Bad Designer Or Developer&quot;">Read more…</a>
+                </p>
+            </div>
+                        <div class="story odd">
+                <h3><a href="/web/20090220003702/http://www.sitepoint.com/blogs/2009/02/19/who-else-wants-to-be-a-copywriter" title="BLOG: How Do You Design Around Messy Content?">How Do You Design Around Messy Content?</a></h3>
+                                    <a href="/web/20090220003702/http://www.sitepoint.com/blogs/2009/02/19/who-else-wants-to-be-a-copywriter"><img class="newsimg" src="/web/20090220003702im_/http://i2.sitepoint.com/graphics/layout-resized-50.jpg" alt="Image for How Do You Design Around Messy Content?"/></a>
+                                <dl class="storymeta">
+                    <dt class="author">Author</dt>
+                    <dd class="author">Alyssa Gregory</dd>
+                    <dt class="date">Date</dt>
+                    <dd class="date">Feb 19th, 10:30am</dd>
+                    <dt class="comments">Comments</dt>
+                    <dd class="comments">
+																		<a href="/web/20090220003702/http://www.sitepoint.com/blogs/2009/02/19/who-else-wants-to-be-a-copywriter#comments" title="3 comments for &quot;How Do You Design Around Messy Content?&quot;">(3 comments)</a>
+																</dd>
+                </dl>
+                <p class="blurb">
+                    As part of the common discussion of design vs. content, how do you create an organized and effective design when you're dealing with content that is disorganized and confusing?
+                    <a href="/web/20090220003702/http://www.sitepoint.com/blogs/2009/02/19/who-else-wants-to-be-a-copywriter" class="more" title="Read more about &quot;How Do You Design Around Messy Content?&quot;">Read more…</a>
+                </p>
+            </div>
+            			            <p class="next"><a href="/web/20090220003702/http://www.sitepoint.com/blogs/category/news#blogpost-5771">More News...</a></p>
+			        </div>
+		<div id="featuread"></div>
+<div id="design" class="department hslice">
+			<h2><span>Design</span></h2>
+			<div class="feature story">
+				<h3><span class="structural-label">Feature Story:</span> <a href="/web/20090220003702/http://www.sitepoint.com/forums/showthread?t=600738" title="FORUM: What Fonts Are Websafe in 2009?">What Fonts Are Websafe in 2009?</a></h3>
+				<dl class="storymeta">
+										<dt class="type">Type</dt>
+					<dd class="type">Forum Thread</dd>
+															<dt class="date">Date</dt>
+					<dd class="date">Feb 18th</dd>
+					<dt class="comments">Comments</dt>
+					<dd class="comments">
+																		<a href="/web/20090220003702/http://www.sitepoint.com/forums/showthread?t=600738" title="36 comments for &quot;What Fonts Are Websafe in 2009?&quot;">(36 comments)</a>
+																</dd>
+				</dl>
+				<div class="featureimg"><a href="/web/20090220003702/http://www.sitepoint.com/forums/showthread?t=600738"><img src="/web/20090220003702im_/http://sitepointstatic.com/images/frontpage/design-default.png" alt=""/></a></div>
+				<p class="blurb">
+					The 'font ecosystem' changes so slowly that it's not hard to go years without taking those gradual changes into consideration. Each new version of MS Office and each new release of OS X brings with it a new kit bag of available fonts.
+					<a href="/web/20090220003702/http://www.sitepoint.com/forums/showthread?t=600738" class="more" title="Read more about &quot;What Fonts Are Websafe in 2009?&quot;">Read more…</a>
+				</p>
+			</div>
+			<div class="recentlyindept">
+				<h3 class="entry-title">Recently in Design</h3>
+	        	<a rel="entry-content" href="/web/20090220003702/http://www.sitepoint.com/webslices/design.php" style="display:none;"></a>
+				<ol>
+									<li class="forum">
+						<div>
+							<a href="/web/20090220003702/http://www.sitepoint.com/forums/showthread?t=599155" class="icon" title="FORUM: Is a Default Radio Button Necessary?">
+								<img src="/web/20090220003702im_/http://www.sitepoint.com/images/forum-icon.jpg" alt="Forum" title="FORUM: Is a Default Radio Button Necessary?" />
+							</a>
+							<a href="/web/20090220003702/http://www.sitepoint.com/forums/showthread?t=599155" title="FORUM: Is a Default Radio Button Necessary?">Is a Default Radio Button Necessary?</a>
+							<span class="comments">
+																											<a href="/web/20090220003702/http://www.sitepoint.com/forums/showthread?t=599155" title="8 comments for &quot;Is a Default Radio Button Necessary?&quot;">(8)</a>
+																								</span>
+						</div>
+					</li>
+									<li class="forum">
+						<div>
+							<a href="/web/20090220003702/http://www.sitepoint.com/forums/showthread?t=600332" class="icon" title="FORUM: CSS - Test Your CSS Skills Number 14">
+								<img src="/web/20090220003702im_/http://www.sitepoint.com/images/forum-icon.jpg" alt="Forum" title="FORUM: CSS - Test Your CSS Skills Number 14" />
+							</a>
+							<a href="/web/20090220003702/http://www.sitepoint.com/forums/showthread?t=600332" title="FORUM: CSS - Test Your CSS Skills Number 14">CSS - Test Your CSS Skills Number 14</a>
+							<span class="comments">
+																											<a href="/web/20090220003702/http://www.sitepoint.com/forums/showthread?t=600332" title="71 comments for &quot;CSS - Test Your CSS Skills Number 14&quot;">(71)</a>
+																								</span>
+						</div>
+					</li>
+									<li class="forum">
+						<div>
+							<a href="/web/20090220003702/http://www.sitepoint.com/forums/showthread?t=599781" class="icon" title="FORUM: How do you choose a font for a design?">
+								<img src="/web/20090220003702im_/http://www.sitepoint.com/images/forum-icon.jpg" alt="Forum" title="FORUM: How do you choose a font for a design?" />
+							</a>
+							<a href="/web/20090220003702/http://www.sitepoint.com/forums/showthread?t=599781" title="FORUM: How do you choose a font for a design?">How do you choose a font for a design?</a>
+							<span class="comments">
+																											<a href="/web/20090220003702/http://www.sitepoint.com/forums/showthread?t=599781" title="46 comments for &quot;How do you choose a font for a design?&quot;">(46)</a>
+																								</span>
+						</div>
+					</li>
+									<li class="forum">
+						<div>
+							<a href="/web/20090220003702/http://www.sitepoint.com/forums/showthread?t=598896" class="icon" title="FORUM: A Customer Asked Us to Design Their Site with No Scrolling....aaagh!! Help.">
+								<img src="/web/20090220003702im_/http://www.sitepoint.com/images/forum-icon.jpg" alt="Forum" title="FORUM: A Customer Asked Us to Design Their Site with No Scrolling....aaagh!! Help." />
+							</a>
+							<a href="/web/20090220003702/http://www.sitepoint.com/forums/showthread?t=598896" title="FORUM: A Customer Asked Us to Design Their Site with No Scrolling....aaagh!! Help.">A Customer Asked Us to Design Their Site with No Scrolling....aaagh!! Help.</a>
+							<span class="comments">
+																											<a href="/web/20090220003702/http://www.sitepoint.com/forums/showthread?t=598896" title="131 comments for &quot;A Customer Asked Us to Design Their Site with No Scrolling....aaagh!! Help.&quot;">(131)</a>
+																								</span>
+						</div>
+					</li>
+									<li class="forum">
+						<div>
+							<a href="/web/20090220003702/http://www.sitepoint.com/forums/showthread?t=598667" class="icon" title="FORUM: Making the text in a Photoshop layout look like it does in a browser">
+								<img src="/web/20090220003702im_/http://www.sitepoint.com/images/forum-icon.jpg" alt="Forum" title="FORUM: Making the text in a Photoshop layout look like it does in a browser" />
+							</a>
+							<a href="/web/20090220003702/http://www.sitepoint.com/forums/showthread?t=598667" title="FORUM: Making the text in a Photoshop layout look like it does in a browser">Making the text in a Photoshop layout look like it does in a browser</a>
+							<span class="comments">
+																											<a href="/web/20090220003702/http://www.sitepoint.com/forums/showthread?t=598667" title="89 comments for &quot;Making the text in a Photoshop layout look like it does in a browser&quot;">(89)</a>
+																								</span>
+						</div>
+					</li>
+									<li class="forum">
+						<div>
+							<a href="/web/20090220003702/http://www.sitepoint.com/forums/showthread?t=598538" class="icon" title="FORUM: CSS - Test Your CSS Skills Number 13 :">
+								<img src="/web/20090220003702im_/http://www.sitepoint.com/images/forum-icon.jpg" alt="Forum" title="FORUM: CSS - Test Your CSS Skills Number 13 :" />
+							</a>
+							<a href="/web/20090220003702/http://www.sitepoint.com/forums/showthread?t=598538" title="FORUM: CSS - Test Your CSS Skills Number 13 :">CSS - Test Your CSS Skills Number 13 :</a>
+							<span class="comments">
+																											<a href="/web/20090220003702/http://www.sitepoint.com/forums/showthread?t=598538" title="121 comments for &quot;CSS - Test Your CSS Skills Number 13 :&quot;">(121)</a>
+																								</span>
+						</div>
+					</li>
+									<li class="forum">
+						<div>
+							<a href="/web/20090220003702/http://www.sitepoint.com/forums/showthread?t=598481" class="icon" title="FORUM: Is Design More Than Just Colours, Pictures and Fonts?">
+								<img src="/web/20090220003702im_/http://www.sitepoint.com/images/forum-icon.jpg" alt="Forum" title="FORUM: Is Design More Than Just Colours, Pictures and Fonts?" />
+							</a>
+							<a href="/web/20090220003702/http://www.sitepoint.com/forums/showthread?t=598481" title="FORUM: Is Design More Than Just Colours, Pictures and Fonts?">Is Design More Than Just Colours, Pictures and Fonts?</a>
+							<span class="comments">
+																											<a href="/web/20090220003702/http://www.sitepoint.com/forums/showthread?t=598481" title="63 comments for &quot;Is Design More Than Just Colours, Pictures and Fonts?&quot;">(63)</a>
+																								</span>
+						</div>
+					</li>
+									<li class="forum">
+						<div>
+							<a href="/web/20090220003702/http://www.sitepoint.com/forums/showthread?t=594788" class="icon" title="FORUM: Any Money in Designing Templates">
+								<img src="/web/20090220003702im_/http://www.sitepoint.com/images/forum-icon.jpg" alt="Forum" title="FORUM: Any Money in Designing Templates" />
+							</a>
+							<a href="/web/20090220003702/http://www.sitepoint.com/forums/showthread?t=594788" title="FORUM: Any Money in Designing Templates">Any Money in Designing Templates</a>
+							<span class="comments">
+																											<a href="/web/20090220003702/http://www.sitepoint.com/forums/showthread?t=594788" title="50 comments for &quot;Any Money in Designing Templates&quot;">(50)</a>
+																								</span>
+						</div>
+					</li>
+								</ol>
+				<ul class="more-in-section">
+					<li><a href="/web/20090220003702/http://www.sitepoint.com/blogs/category/design/">More in Design...</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="tech" class="department hslice">
+			<h2><span>Tech</span></h2>
+			<div class="feature story">
+				<h3><span class="structural-label">Feature Story:</span> <a href="/web/20090220003702/http://www.sitepoint.com/blogs/2009/02/17/bespin-cloud-coding" title="BLOG: Will You Code In The Cloud?">Will You Code In The Cloud?</a></h3>
+				<dl class="storymeta">
+										<dt class="type">Type</dt>
+					<dd class="type">blog</dd>
+															<dt class="author">Author</dt>
+					<dd class="author">Craig Buckler</dd>
+										<dt class="date">Date</dt>
+					<dd class="date">Feb 17th</dd>
+					<dt class="comments">Comments</dt>
+					<dd class="comments">
+																		<a href="/web/20090220003702/http://www.sitepoint.com/blogs/2009/02/17/bespin-cloud-coding#comments" title="18 comments for &quot;Will You Code In The Cloud?&quot;">(18 comments)</a>
+																</dd>
+				</dl>
+				<div class="featureimg"><a href="/web/20090220003702/http://www.sitepoint.com/blogs/2009/02/17/bespin-cloud-coding"><img src="/web/20090220003702im_/http://i2.sitepoint.com/graphics/bespin150-resized-115.jpg" alt=""/></a></div>
+				<p class="blurb">
+					Mozilla Bespin shows an exciting future where all web code could be developed right inside the browser. Is it realistic? Will you do your coding in the cloud?
+					<a href="/web/20090220003702/http://www.sitepoint.com/blogs/2009/02/17/bespin-cloud-coding" class="more" title="Read more about &quot;Will You Code In The Cloud?&quot;">Read more…</a>
+				</p>
+			</div>
+			<div class="recentlyindept">
+				<h3 class="entry-title">Recently in Tech</h3>
+	        	<a rel="entry-content" href="/web/20090220003702/http://www.sitepoint.com/webslices/tech.php" style="display:none;"></a>
+				<ol>
+									<li class="blog">
+						<div>
+							<a href="/web/20090220003702/http://www.sitepoint.com/blogs/2009/02/18/learn-sql-the-easy-way" class="icon" title="BLOG: Learn SQL -- The EASY Way!">
+								<img src="/web/20090220003702im_/http://www.sitepoint.com/images/blog-icon.jpg" alt="Blog" title="BLOG: Learn SQL -- The EASY Way!" />
+							</a>
+							<a href="/web/20090220003702/http://www.sitepoint.com/blogs/2009/02/18/learn-sql-the-easy-way" title="BLOG: Learn SQL -- The EASY Way!">Learn SQL -- The EASY Way!</a>
+							<span class="comments">
+																											<a href="/web/20090220003702/http://www.sitepoint.com/blogs/2009/02/18/learn-sql-the-easy-way#comments" title="3 comments for &quot;Learn SQL -- The EASY Way!&quot;">(3)</a>
+																								</span>
+						</div>
+					</li>
+									<li class="blog">
+						<div>
+							<a href="/web/20090220003702/http://www.sitepoint.com/blogs/2009/02/17/whats-so-bad-about-css-frameworks" class="icon" title="BLOG: What's So Bad About CSS Frameworks?">
+								<img src="/web/20090220003702im_/http://www.sitepoint.com/images/blog-icon.jpg" alt="Blog" title="BLOG: What's So Bad About CSS Frameworks?" />
+							</a>
+							<a href="/web/20090220003702/http://www.sitepoint.com/blogs/2009/02/17/whats-so-bad-about-css-frameworks" title="BLOG: What's So Bad About CSS Frameworks?">What's So Bad About CSS Frameworks?</a>
+							<span class="comments">
+																											<a href="/web/20090220003702/http://www.sitepoint.com/blogs/2009/02/17/whats-so-bad-about-css-frameworks#comments" title="37 comments for &quot;What's So Bad About CSS Frameworks?&quot;">(37)</a>
+																								</span>
+						</div>
+					</li>
+									<li class="blog">
+						<div>
+							<a href="/web/20090220003702/http://www.sitepoint.com/blogs/2009/02/13/200-copies-of-the-adobe-flash-platform-reference-for-rias-to-give-away" class="icon" title="BLOG: 200 Copies of The Adobe Flash Platform Reference for RIAs to Give Away!">
+								<img src="/web/20090220003702im_/http://www.sitepoint.com/images/blog-icon.jpg" alt="Blog" title="BLOG: 200 Copies of The Adobe Flash Platform Reference for RIAs to Give Away!" />
+							</a>
+							<a href="/web/20090220003702/http://www.sitepoint.com/blogs/2009/02/13/200-copies-of-the-adobe-flash-platform-reference-for-rias-to-give-away" title="BLOG: 200 Copies of The Adobe Flash Platform Reference for RIAs to Give Away!">200 Copies of The Adobe Flash Platform Reference for RIAs to Give Away!</a>
+							<span class="comments">
+																											<a href="/web/20090220003702/http://www.sitepoint.com/blogs/2009/02/13/200-copies-of-the-adobe-flash-platform-reference-for-rias-to-give-away#comments" title="1 comment for &quot;200 Copies of The Adobe Flash Platform Reference for RIAs to Give Away!&quot;">(1)</a>
+																								</span>
+						</div>
+					</li>
+									<li class="blog">
+						<div>
+							<a href="/web/20090220003702/http://www.sitepoint.com/blogs/2009/02/13/facebook-value-lost" class="icon" title="BLOG: Facebook Loses Face Value - ls Seppuku Imminent?">
+								<img src="/web/20090220003702im_/http://www.sitepoint.com/images/blog-icon.jpg" alt="Blog" title="BLOG: Facebook Loses Face Value - ls Seppuku Imminent?" />
+							</a>
+							<a href="/web/20090220003702/http://www.sitepoint.com/blogs/2009/02/13/facebook-value-lost" title="BLOG: Facebook Loses Face Value - ls Seppuku Imminent?">Facebook Loses Face Value - ls Seppuku Imminent?</a>
+							<span class="comments">
+																											<a href="/web/20090220003702/http://www.sitepoint.com/blogs/2009/02/13/facebook-value-lost#comments" title="22 comments for &quot;Facebook Loses Face Value - ls Seppuku Imminent?&quot;">(22)</a>
+																								</span>
+						</div>
+					</li>
+									<li class="blog">
+						<div>
+							<a href="/web/20090220003702/http://www.sitepoint.com/blogs/2009/02/11/styling-the-html-and-body-elements" class="icon" title="BLOG: Styling the html and body Elements">
+								<img src="/web/20090220003702im_/http://www.sitepoint.com/images/blog-icon.jpg" alt="Blog" title="BLOG: Styling the html and body Elements" />
+							</a>
+							<a href="/web/20090220003702/http://www.sitepoint.com/blogs/2009/02/11/styling-the-html-and-body-elements" title="BLOG: Styling the html and body Elements">Styling the html and body Elements</a>
+							<span class="comments">
+																											<a href="/web/20090220003702/http://www.sitepoint.com/blogs/2009/02/11/styling-the-html-and-body-elements#comments" title="17 comments for &quot;Styling the html and body Elements&quot;">(17)</a>
+																								</span>
+						</div>
+					</li>
+									<li class="article">
+						<div>
+							<a href="/web/20090220003702/http://www.sitepoint.com/article/debugging-adobe-air-application/" class="icon" title="ARTICLE: Adobe AIR: Supercharged Development with Debugging">
+								<img src="/web/20090220003702im_/http://www.sitepoint.com/images/article-icon.jpg" alt="Article" title="ARTICLE: Adobe AIR: Supercharged Development with Debugging" />
+							</a>
+							<a href="/web/20090220003702/http://www.sitepoint.com/article/debugging-adobe-air-application/" title="ARTICLE: Adobe AIR: Supercharged Development with Debugging">Adobe AIR: Supercharged Development with Debugging</a>
+							<span class="comments">
+																	<span title="No comments for &quot;Adobe AIR: Supercharged Development with Debugging&quot;">(0)</span>
+															</span>
+						</div>
+					</li>
+									<li class="blog">
+						<div>
+							<a href="/web/20090220003702/http://www.sitepoint.com/blogs/2009/02/10/spam-twitter" class="icon" title="BLOG: Spamming Twitter Is Now Easier Than Ever">
+								<img src="/web/20090220003702im_/http://www.sitepoint.com/images/blog-icon.jpg" alt="Blog" title="BLOG: Spamming Twitter Is Now Easier Than Ever" />
+							</a>
+							<a href="/web/20090220003702/http://www.sitepoint.com/blogs/2009/02/10/spam-twitter" title="BLOG: Spamming Twitter Is Now Easier Than Ever">Spamming Twitter Is Now Easier Than Ever</a>
+							<span class="comments">
+																											<a href="/web/20090220003702/http://www.sitepoint.com/blogs/2009/02/10/spam-twitter#comments" title="10 comments for &quot;Spamming Twitter Is Now Easier Than Ever&quot;">(10)</a>
+																								</span>
+						</div>
+					</li>
+								</ol>
+				<ul class="more-in-section">
+					<li><a href="/web/20090220003702/http://www.sitepoint.com/blogs/category/tech/">More in Tech...</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="business" class="department hslice">
+			<h2><span>Business</span></h2>
+			<div class="feature story">
+				<h3><span class="structural-label">Feature Story:</span> <a href="/web/20090220003702/http://www.sitepoint.com/blogs/2009/02/17/caution-six-warning-signs-of-a-bad-client" title="BLOG: Caution! Six Warning Signs Of A Bad Client">Caution! Six Warning Signs Of A Bad Client</a></h3>
+				<dl class="storymeta">
+										<dt class="type">Type</dt>
+					<dd class="type">blog</dd>
+															<dt class="author">Author</dt>
+					<dd class="author">Alyssa Gregory</dd>
+										<dt class="date">Date</dt>
+					<dd class="date">Feb 17th</dd>
+					<dt class="comments">Comments</dt>
+					<dd class="comments">
+																		<a href="/web/20090220003702/http://www.sitepoint.com/blogs/2009/02/17/caution-six-warning-signs-of-a-bad-client#comments" title="22 comments for &quot;Caution! Six Warning Signs Of A Bad Client&quot;">(22 comments)</a>
+																</dd>
+				</dl>
+				<div class="featureimg"><a href="/web/20090220003702/http://www.sitepoint.com/blogs/2009/02/17/caution-six-warning-signs-of-a-bad-client"><img src="/web/20090220003702im_/http://i2.sitepoint.com/graphics/crime-scene-resized-115.jpg" alt=""/></a></div>
+				<p class="blurb">
+					Not all clients are good clients, even when times are tough. Sometimes, you just have to say no to work to preserve your value as a designer. Here are a list of six red flags that you may be taking on a job that you'll regret later.
+					<a href="/web/20090220003702/http://www.sitepoint.com/blogs/2009/02/17/caution-six-warning-signs-of-a-bad-client" class="more" title="Read more about &quot;Caution! Six Warning Signs Of A Bad Client&quot;">Read more…</a>
+				</p>
+			</div>
+			<div class="recentlyindept">
+				<h3 class="entry-title">Recently in Business</h3>
+	        	<a rel="entry-content" href="/web/20090220003702/http://www.sitepoint.com/webslices/business.php" style="display:none;"></a>
+				<ol>
+									<li class="forum">
+						<div>
+							<a href="/web/20090220003702/http://www.sitepoint.com/forums/showthread?t=595049" class="icon" title="FORUM: .tel Domains: Are You Getting One?">
+								<img src="/web/20090220003702im_/http://www.sitepoint.com/images/forum-icon.jpg" alt="Forum" title="FORUM: .tel Domains: Are You Getting One?" />
+							</a>
+							<a href="/web/20090220003702/http://www.sitepoint.com/forums/showthread?t=595049" title="FORUM: .tel Domains: Are You Getting One?">.tel Domains: Are You Getting One?</a>
+							<span class="comments">
+																											<a href="/web/20090220003702/http://www.sitepoint.com/forums/showthread?t=595049" title="37 comments for &quot;.tel Domains: Are You Getting One?&quot;">(37)</a>
+																								</span>
+						</div>
+					</li>
+									<li class="forum">
+						<div>
+							<a href="/web/20090220003702/http://www.sitepoint.com/forums/showthread?t=600894" class="icon" title="FORUM: How To Valuate A Site With PPC Revenue?">
+								<img src="/web/20090220003702im_/http://www.sitepoint.com/images/forum-icon.jpg" alt="Forum" title="FORUM: How To Valuate A Site With PPC Revenue?" />
+							</a>
+							<a href="/web/20090220003702/http://www.sitepoint.com/forums/showthread?t=600894" title="FORUM: How To Valuate A Site With PPC Revenue?">How To Valuate A Site With PPC Revenue?</a>
+							<span class="comments">
+																											<a href="/web/20090220003702/http://www.sitepoint.com/forums/showthread?t=600894" title="8 comments for &quot;How To Valuate A Site With PPC Revenue?&quot;">(8)</a>
+																								</span>
+						</div>
+					</li>
+									<li class="blog">
+						<div>
+							<a href="/web/20090220003702/http://www.sitepoint.com/blogs/2009/02/17/mobile-seo-myths-exposed" class="icon" title="BLOG: Mobile SEO Myths Exposed">
+								<img src="/web/20090220003702im_/http://www.sitepoint.com/images/blog-icon.jpg" alt="Blog" title="BLOG: Mobile SEO Myths Exposed" />
+							</a>
+							<a href="/web/20090220003702/http://www.sitepoint.com/blogs/2009/02/17/mobile-seo-myths-exposed" title="BLOG: Mobile SEO Myths Exposed">Mobile SEO Myths Exposed</a>
+							<span class="comments">
+																											<a href="/web/20090220003702/http://www.sitepoint.com/blogs/2009/02/17/mobile-seo-myths-exposed#comments" title="14 comments for &quot;Mobile SEO Myths Exposed&quot;">(14)</a>
+																								</span>
+						</div>
+					</li>
+									<li class="blog">
+						<div>
+							<a href="/web/20090220003702/http://www.sitepoint.com/blogs/2009/02/10/yahoo-automated-seo-patent" class="icon" title="BLOG: Automated SEO – A Possible Future According to Yahoo!">
+								<img src="/web/20090220003702im_/http://www.sitepoint.com/images/blog-icon.jpg" alt="Blog" title="BLOG: Automated SEO – A Possible Future According to Yahoo!" />
+							</a>
+							<a href="/web/20090220003702/http://www.sitepoint.com/blogs/2009/02/10/yahoo-automated-seo-patent" title="BLOG: Automated SEO – A Possible Future According to Yahoo!">Automated SEO – A Possible Future According to Yahoo!</a>
+							<span class="comments">
+																											<a href="/web/20090220003702/http://www.sitepoint.com/blogs/2009/02/10/yahoo-automated-seo-patent#comments" title="7 comments for &quot;Automated SEO – A Possible Future According to Yahoo!&quot;">(7)</a>
+																								</span>
+						</div>
+					</li>
+									<li class="blog">
+						<div>
+							<a href="/web/20090220003702/http://www.sitepoint.com/blogs/2009/02/09/interview-with-mike-brown-webstock" class="icon" title="BLOG: Interview with Mike Brown, WebStock">
+								<img src="/web/20090220003702im_/http://www.sitepoint.com/images/blog-icon.jpg" alt="Blog" title="BLOG: Interview with Mike Brown, WebStock" />
+							</a>
+							<a href="/web/20090220003702/http://www.sitepoint.com/blogs/2009/02/09/interview-with-mike-brown-webstock" title="BLOG: Interview with Mike Brown, WebStock">Interview with Mike Brown, WebStock</a>
+							<span class="comments">
+																	<span title="No comments for &quot;Interview with Mike Brown, WebStock&quot;">(0)</span>
+															</span>
+						</div>
+					</li>
+									<li class="blog">
+						<div>
+							<a href="/web/20090220003702/http://www.sitepoint.com/blogs/2009/02/09/interview-with-a-young-entrepreneur" class="icon" title="BLOG: Interview with a Young Entrepreneur ">
+								<img src="/web/20090220003702im_/http://www.sitepoint.com/images/blog-icon.jpg" alt="Blog" title="BLOG: Interview with a Young Entrepreneur " />
+							</a>
+							<a href="/web/20090220003702/http://www.sitepoint.com/blogs/2009/02/09/interview-with-a-young-entrepreneur" title="BLOG: Interview with a Young Entrepreneur ">Interview with a Young Entrepreneur </a>
+							<span class="comments">
+																											<a href="/web/20090220003702/http://www.sitepoint.com/blogs/2009/02/09/interview-with-a-young-entrepreneur#comments" title="2 comments for &quot;Interview with a Young Entrepreneur &quot;">(2)</a>
+																								</span>
+						</div>
+					</li>
+									<li class="forum">
+						<div>
+							<a href="/web/20090220003702/http://www.sitepoint.com/forums/showthread?t=598056" class="icon" title="FORUM: Would You Drop Your Rates for the Suffering Economy?">
+								<img src="/web/20090220003702im_/http://www.sitepoint.com/images/forum-icon.jpg" alt="Forum" title="FORUM: Would You Drop Your Rates for the Suffering Economy?" />
+							</a>
+							<a href="/web/20090220003702/http://www.sitepoint.com/forums/showthread?t=598056" title="FORUM: Would You Drop Your Rates for the Suffering Economy?">Would You Drop Your Rates for the Suffering Economy?</a>
+							<span class="comments">
+																											<a href="/web/20090220003702/http://www.sitepoint.com/forums/showthread?t=598056" title="86 comments for &quot;Would You Drop Your Rates for the Suffering Economy?&quot;">(86)</a>
+																								</span>
+						</div>
+					</li>
+								</ol>
+				<ul class="more-in-section">
+					<li><a href="/web/20090220003702/http://www.sitepoint.com/blogs/category/business/">More in Business...</a></li>
+				</ul>
+			</div>
+		</div>
+
+	</div>
+	<div id="sidebar">
+
+
+		<div id="subscribe">
+			<h2><span><span>Follow SitePoint on...</span></span></h2>
+			<ul>
+				<li class="twitter"><a href="/web/20090220003702/http://twitter.com/sitepointdotcom">Twitter</a></li>
+				<li class="newsletters"><a href="/web/20090220003702/http://www.sitepoint.com/newsletter/">Newsletters</a></li>
+				<li class="rss"><a href="/web/20090220003702/http://www.sitepoint.com/subscribe">RSS</a></li>
+			</ul>
+		</div>
+
+
+		<div id="ads">
+			<h2 class="structural-label">Advertisements</h2>
+			<div id="adflexible"><!-- Filled dynamically by script at end of page --></div>
+			<div id="ad250x250upper"><!-- Filled dynamically by script at end of page --></div>
+			<div id="ad250x250middle"><!-- Filled dynamically by script at end of page --></div>
+			<div id="ad250x250lower"><!-- Filled dynamically by script at end of page --></div>
+			<div id="ad125x125left" class="ad125x125"><!-- Filled dynamically by script at end of page --></div>
+			<div id="ad125x125right" class="ad125x125"><!-- Filled dynamically by script at end of page --></div>
+			<div id="ad120x600left" class="ad120x600"><!-- Filled dynamically by script at end of page --></div>
+			<div id="ad120x600right" class="ad120x600"><!-- Filled dynamically by script at end of page --></div>
+
+<div id="newbooklist">
+  <p>Download sample chapters of any of our popular books. </p>
+  <ul>
+      <li><img src="/web/20090220003702im_/http://www.sitepointstatic.com/images/books/html2/books-index.gif" alt="Build Your Own Web Site The Right Way Using HTML &amp;amp; CSS, 2nd Edition" width="83" height="108" />
+      <a href="/web/20090220003702/http://www.sitepoint.com/books/html2/" title="Find out more about this book">Start Building Web Sites Like a Pro! </a>
+      <ul class="newbooklistoptions">
+        <li><a href="/web/20090220003702/http://www.sitepoint.com/launch/693c9b/2/145/" rel="popup|420|580" title="Get your FREE sample chapters now">Free Sample</a></li>
+        <li><a href="/web/20090220003702/http://www.sitepoint.com/launch/693c9b/3/145/" title="Find out more about this book">More Info</a></li>
+        <li><a href="/web/20090220003702/https://sitepoint.com/bookstore/go/145" title="Add this book to your order here">Order Now</a></li>
+      </ul>
+    </li>
+      <li><img src="/web/20090220003702im_/http://www.sitepointstatic.com/images/books/csswrong1/books-index.gif" alt="Everything You Know About CSS Is Wrong!" width="83" height="108" />
+      <a href="/web/20090220003702/http://www.sitepoint.com/launch/012379/3/144/" title="Find out more about this book">Everything You Know About CSS Is Wrong!</a>
+      <ul class="newbooklistoptions">
+        <li><a href="/web/20090220003702/http://www.sitepoint.com/launch/012379/2/144/" rel="popup|420|580" title="Get your FREE sample chapters now">Free Sample</a></li>
+        <li><a href="/web/20090220003702/http://www.sitepoint.com/launch/012379/3/144/" title="Find out more about this book">More Info</a></li>
+        <li><a href="/web/20090220003702/https://sitepoint.com/bookstore/go/144" title="Add this book to your order here">Order Now</a></li>
+      </ul>
+    </li>
+        <li><a href="/web/20090220003702/http://www.sitepoint.com/launch/7771f8/3/83/" title="Find out more about this book"><img src="/web/20090220003702im_/http://www.sitepointstatic.com/images/books/design1/books-index.gif" alt="The Principles of Beautiful Web Design" width="83" height="108" /></a>
+      <a href="/web/20090220003702/http://www.sitepoint.com/books/design1/" title="Find out more about this book">Learn How to Create Beautiful Web Sites</a>
+      <ul class="newbooklistoptions">
+        <li><a href="/web/20090220003702/http://www.sitepoint.com/launch/7771f8/2/83/" rel="popup|420|580" title="Get your FREE sample chapters now">Free Sample</a></li>
+        <li><a href="/web/20090220003702/http://www.sitepoint.com/launch/7771f8/3/83/" title="Find out more about this book">More Info</a></li>
+        <li><a href="/web/20090220003702/https://sitepoint.com/bookstore/go/83" title="Add this book to your order here">Order Now</a></li>
+      </ul>
+    </li>
+        <li><a href="/web/20090220003702/http://www.sitepoint.com/launch/54ac38/3/1/" title="Find out more about this book"><img src="/web/20090220003702im_/http://www.sitepointstatic.com/images/books/phpmysql1/books-index.gif" alt="Build Your Own Database Driven Website Using PHP &amp; MySQL" width="83" height="108" /></a>
+      <a href="/web/20090220003702/http://www.sitepoint.com/books/phpmysql1/" title="Find out more about this book">Learn PHP the Easy Way!</a>
+      <ul class="newbooklistoptions">
+        <li><a href="/web/20090220003702/http://www.sitepoint.com/launch/54ac38/2/1/" rel="popup|420|580" title="Get your FREE sample chapters now">Free Sample</a></li>
+        <li><a href="/web/20090220003702/http://www.sitepoint.com/launch/54ac38/3/1/" title="Find out more about this book">More Info</a></li>
+        <li><a href="/web/20090220003702/https://sitepoint.com/bookstore/go/1" title="Add this book to your order here">Order Now</a></li>
+      </ul>
+    </li>
+          <li><a href="/web/20090220003702/http://www.sitepoint.com/launch/dfbecf/3/112/" title="Find out more about this book"><img src="/web/20090220003702im_/http://www.sitepointstatic.com/images/books/cssant2/books-index.gif" alt="The CSS Anthology: 101 Essential Tips, Tricks &amp;amp; Hacks, 2&lt;sup&gt;nd&lt;/sup&gt; Edition" width="83" height="108" /></a>
+      <a href="/web/20090220003702/http://www.sitepoint.com/books/cssant2/" title="Find out more about this book">101 CSS Tips, Tricks &amp; Hacks</a>
+      <ul class="newbooklistoptions">
+        <li><a href="/web/20090220003702/http://www.sitepoint.com/launch/dfbecf/2/112/" rel="popup|420|580" title="Get your FREE sample chapters now">Free Sample</a></li>
+        <li><a href="/web/20090220003702/http://www.sitepoint.com/launch/dfbecf/3/112/" title="Find out more about this book">More Info</a></li>
+        <li><a href="/web/20090220003702/https://sitepoint.com/bookstore/go/112" title="Add this book to your order here">Order Now</a></li>
+      </ul>
+    </li>
+  </ul>
+</div>
+<div id="booktextlinks"></div>
+
+
+
+
+
+		</div>
+	</div>
+	    <div id="othercontent">
+        <div id="mostviewed">
+            <h2><span>Most Viewed Articles</span></h2>
+            <ol>
+                            <li>
+                	<div>
+						<a href="/web/20090220003702/http://www.sitepoint.com/article/fancy-form-design-css/" class="icon" title="ARTICLE: Fancy Form Design Using CSS">
+							<img src="/web/20090220003702im_/http://www.sitepoint.com/images/article-icon.jpg" alt="Article" title="ARTICLE: Fancy Form Design Using CSS" />
+						</a>
+						<a href="/web/20090220003702/http://www.sitepoint.com/article/fancy-form-design-css/" title="ARTICLE: Fancy Form Design Using CSS">Fancy Form Design Using CSS</a>
+						<span class="comments">
+																					<a href="/web/20090220003702/http://www.sitepoint.com/forums/showthread?t=481847" title="103 comments for &quot;Fancy Form Design Using CSS&quot;">(103 comments)</a>
+																			</span>
+					</div>
+                </li>
+                            <li>
+                	<div>
+						<a href="/web/20090220003702/http://www.sitepoint.com/article/code-html-email-newsletters/" class="icon" title="ARTICLE: How to Code HTML Email Newsletters">
+							<img src="/web/20090220003702im_/http://www.sitepoint.com/images/article-icon.jpg" alt="Article" title="ARTICLE: How to Code HTML Email Newsletters" />
+						</a>
+						<a href="/web/20090220003702/http://www.sitepoint.com/article/code-html-email-newsletters/" title="ARTICLE: How to Code HTML Email Newsletters">How to Code HTML Email Newsletters</a>
+						<span class="comments">
+																					<a href="/web/20090220003702/http://www.sitepoint.com/forums/showthread?t=207611" title="215 comments for &quot;How to Code HTML Email Newsletters&quot;">(215 comments)</a>
+																			</span>
+					</div>
+                </li>
+                            <li>
+                	<div>
+						<a href="/web/20090220003702/http://www.sitepoint.com/article/html-css-beginners-guide/" class="icon" title="ARTICLE: Learn HTML and CSS: An Absolute Beginner’s Guide">
+							<img src="/web/20090220003702im_/http://www.sitepoint.com/images/article-icon.jpg" alt="Article" title="ARTICLE: Learn HTML and CSS: An Absolute Beginner’s Guide" />
+						</a>
+						<a href="/web/20090220003702/http://www.sitepoint.com/article/html-css-beginners-guide/" title="ARTICLE: Learn HTML and CSS: An Absolute Beginner’s Guide">Learn HTML and CSS: An Absolute Beginner’s Guide</a>
+						<span class="comments">
+																					<a href="/web/20090220003702/http://www.sitepoint.com/forums/showthread?t=387297" title="21 comments for &quot;Learn HTML and CSS: An Absolute Beginner’s Guide&quot;">(21 comments)</a>
+																			</span>
+					</div>
+                </li>
+                            <li>
+                	<div>
+						<a href="/web/20090220003702/http://www.sitepoint.com/article/style-web-forms-css/" class="icon" title="ARTICLE: Style Web Forms Using CSS">
+							<img src="/web/20090220003702im_/http://www.sitepoint.com/images/article-icon.jpg" alt="Article" title="ARTICLE: Style Web Forms Using CSS" />
+						</a>
+						<a href="/web/20090220003702/http://www.sitepoint.com/article/style-web-forms-css/" title="ARTICLE: Style Web Forms Using CSS">Style Web Forms Using CSS</a>
+						<span class="comments">
+																					<a href="/web/20090220003702/http://www.sitepoint.com/forums/showthread?t=118260" title="82 comments for &quot;Style Web Forms Using CSS&quot;">(82 comments)</a>
+																			</span>
+					</div>
+                </li>
+                            <li>
+                	<div>
+						<a href="/web/20090220003702/http://www.sitepoint.com/article/advanced-email-php/" class="icon" title="ARTICLE: Advanced email in PHP">
+							<img src="/web/20090220003702im_/http://www.sitepoint.com/images/article-icon.jpg" alt="Article" title="ARTICLE: Advanced email in PHP" />
+						</a>
+						<a href="/web/20090220003702/http://www.sitepoint.com/article/advanced-email-php/" title="ARTICLE: Advanced email in PHP">Advanced email in PHP</a>
+						<span class="comments">
+																					<a href="/web/20090220003702/http://www.sitepoint.com/forums/showthread?t=182946" title="70 comments for &quot;Advanced email in PHP&quot;">(70 comments)</a>
+																			</span>
+					</div>
+                </li>
+                        </ol>
+        </div>
+        <div id="pointybits" class="hslice">
+            <h2><span class="entry-title">SitePoint Development Blog</span></h2>
+        	<a rel="entry-content" href="/web/20090220003702/http://www.sitepoint.com/webslices/pointybits.php" style="display:none;"></a>
+            <ol>
+                            <li class="blog">
+                	<div>
+						<a href="/web/20090220003702/http://dev.sitepoint.com/2009/02/sitepoint-data-recovery-strategy" class="icon" title="DEV BLOG: SitePoint Data Recovery Strategy">
+							<img src="/web/20090220003702im_/http://www.sitepoint.com/images/blog-icon.jpg" alt="Blog" title="DEV BLOG: SitePoint Data Recovery Strategy" />
+						</a>
+						<a href="/web/20090220003702/http://dev.sitepoint.com/2009/02/sitepoint-data-recovery-strategy" title="DEV BLOG: SitePoint Data Recovery Strategy">SitePoint Data Recovery Strategy</a>
+						<span class="comments">
+													<span title="No comments for &quot;SitePoint Data Recovery Strategy&quot;">(0 comments)</span>
+												</span>
+					</div>
+               	</li>
+                            <li class="blog">
+                	<div>
+						<a href="/web/20090220003702/http://dev.sitepoint.com/2009/01/major-performance-upgrade" class="icon" title="DEV BLOG: Major Performance Upgrade">
+							<img src="/web/20090220003702im_/http://www.sitepoint.com/images/blog-icon.jpg" alt="Blog" title="DEV BLOG: Major Performance Upgrade" />
+						</a>
+						<a href="/web/20090220003702/http://dev.sitepoint.com/2009/01/major-performance-upgrade" title="DEV BLOG: Major Performance Upgrade">Major Performance Upgrade</a>
+						<span class="comments">
+																					<a href="/web/20090220003702/http://dev.sitepoint.com/2009/01/major-performance-upgrade#comments" title="9 comments for &quot;Major Performance Upgrade&quot;">(9 comments)</a>
+																			</span>
+					</div>
+               	</li>
+                            <li class="blog">
+                	<div>
+						<a href="/web/20090220003702/http://dev.sitepoint.com/2009/01/australia-day-holiday-support-hours" class="icon" title="DEV BLOG: Australia Day Holiday Support Hours">
+							<img src="/web/20090220003702im_/http://www.sitepoint.com/images/blog-icon.jpg" alt="Blog" title="DEV BLOG: Australia Day Holiday Support Hours" />
+						</a>
+						<a href="/web/20090220003702/http://dev.sitepoint.com/2009/01/australia-day-holiday-support-hours" title="DEV BLOG: Australia Day Holiday Support Hours">Australia Day Holiday Support Hours</a>
+						<span class="comments">
+													<span title="No comments for &quot;Australia Day Holiday Support Hours&quot;">(0 comments)</span>
+												</span>
+					</div>
+               	</li>
+                            <li class="blog">
+                	<div>
+						<a href="/web/20090220003702/http://dev.sitepoint.com/2009/01/attention-sellers-required-paypal-settings" class="icon" title="DEV BLOG: Attention Sellers: Required PayPal Settings">
+							<img src="/web/20090220003702im_/http://www.sitepoint.com/images/blog-icon.jpg" alt="Blog" title="DEV BLOG: Attention Sellers: Required PayPal Settings" />
+						</a>
+						<a href="/web/20090220003702/http://dev.sitepoint.com/2009/01/attention-sellers-required-paypal-settings" title="DEV BLOG: Attention Sellers: Required PayPal Settings">Attention Sellers: Required PayPal Settings</a>
+						<span class="comments">
+																					<a href="/web/20090220003702/http://dev.sitepoint.com/2009/01/attention-sellers-required-paypal-settings#comments" title="8 comments for &quot;Attention Sellers: Required PayPal Settings&quot;">(8 comments)</a>
+																			</span>
+					</div>
+               	</li>
+                            <li class="blog">
+                	<div>
+						<a href="/web/20090220003702/http://dev.sitepoint.com/2008/11/a-quick-update-on-where-were-at" class="icon" title="DEV BLOG: A quick update on where we are at">
+							<img src="/web/20090220003702im_/http://www.sitepoint.com/images/blog-icon.jpg" alt="Blog" title="DEV BLOG: A quick update on where we are at" />
+						</a>
+						<a href="/web/20090220003702/http://dev.sitepoint.com/2008/11/a-quick-update-on-where-were-at" title="DEV BLOG: A quick update on where we are at">A quick update on where we are at</a>
+						<span class="comments">
+																					<a href="/web/20090220003702/http://dev.sitepoint.com/2008/11/a-quick-update-on-where-were-at#comments" title="8 comments for &quot;A quick update on where we are at&quot;">(8 comments)</a>
+																			</span>
+					</div>
+               	</li>
+                        </ol>
+        </div>
+    </div>
+    <div id="topics">
+        <h2>Topics</h2>
+        <ul class="tagcloud">
+                    <li class="tagcloud60"><a href="/web/20090220003702/http://www.sitepoint.com/subcat/asp" title="Topic &quot;.NET&quot; (60% popularity)">.NET</a></li>
+                    <li class="tagcloud40"><a href="/web/20090220003702/http://www.sitepoint.com/subcat/xml" title="Topic &quot;XSLT&quot; (40% popularity)">XSLT</a></li>
+                    <li class="tagcloud30"><a href="/web/20090220003702/http://www.sitepoint.com/subcat/accessibility" title="Topic &quot;Accessibility&quot; (30% popularity)">Accessibility</a></li>
+                    <li class="tagcloud55"><a href="/web/20090220003702/http://www.sitepoint.com/subcat/javascript" title="Topic &quot;Ajax&quot; (55% popularity)">Ajax</a></li>
+                    <li class="tagcloud30"><a href="/web/20090220003702/http://www.sitepoint.com/subcat/other-technologies" title="Topic &quot;Apache&quot; (30% popularity)">Apache</a></li>
+                    <li class="tagcloud60"><a href="/web/20090220003702/http://www.sitepoint.com/subcat/asp" title="Topic &quot;ASP&quot; (60% popularity)">ASP</a></li>
+                    <li class="tagcloud25"><a href="/web/20090220003702/http://www.sitepoint.com/subcat/perl" title="Topic &quot;CGI&quot; (25% popularity)">CGI</a></li>
+                    <li class="tagcloud30"><a href="/web/20090220003702/http://www.sitepoint.com/subcat/coldfusion" title="Topic &quot;ColdFusion&quot; (30% popularity)">ColdFusion</a></li>
+                    <li class="tagcloud25"><a href="/web/20090220003702/http://www.sitepoint.com/subcat/community-strategy" title="Topic &quot;Community&quot; (25% popularity)">Community</a></li>
+                    <li class="tagcloud25"><a href="/web/20090220003702/http://www.sitepoint.com/subcat/content-strategy" title="Topic &quot;Content&quot; (25% popularity)">Content</a></li>
+                    <li class="tagcloud85"><a href="/web/20090220003702/http://www.sitepoint.com/subcat/css" title="Topic &quot;CSS&quot; (85% popularity)">CSS</a></li>
+                    <li class="tagcloud45"><a href="/web/20090220003702/http://www.sitepoint.com/subcat/design-practice" title="Topic &quot;Design Practice&quot; (45% popularity)">Design Practice</a></li>
+                    <li class="tagcloud60"><a href="/web/20090220003702/http://www.sitepoint.com/subcat/design-principles" title="Topic &quot;Design Principles&quot; (60% popularity)">Design Principles</a></li>
+                    <li class="tagcloud50"><a href="/web/20090220003702/http://www.sitepoint.com/subcat/design-tips" title="Topic &quot;Design Tips&quot; (50% popularity)">Design Tips</a></li>
+                    <li class="tagcloud35"><a href="/web/20090220003702/http://www.sitepoint.com/subcat/domain-names" title="Topic &quot;Domain Names&quot; (35% popularity)">Domain Names</a></li>
+                    <li class="tagcloud30"><a href="/web/20090220003702/http://www.sitepoint.com/subcat/ecommerce-strategy" title="Topic &quot;eCommerce&quot; (30% popularity)">eCommerce</a></li>
+                    <li class="tagcloud25"><a href="/web/20090220003702/http://www.sitepoint.com/subcat/find-clients" title="Topic &quot;Find Clients&quot; (25% popularity)">Find Clients</a></li>
+                    <li class="tagcloud85"><a href="/web/20090220003702/http://www.sitepoint.com/subcat/flash" title="Topic &quot;Flash&quot; (85% popularity)">Flash</a></li>
+                    <li class="tagcloud25"><a href="/web/20090220003702/http://www.sitepoint.com/subcat/services-start" title="Topic &quot;Get Started&quot; (25% popularity)">Get Started</a></li>
+                    <li class="tagcloud30"><a href="/web/20090220003702/http://www.sitepoint.com/subcat/hosting" title="Topic &quot;Hosting&quot; (30% popularity)">Hosting</a></li>
+                    <li class="tagcloud40"><a href="/web/20090220003702/http://www.sitepoint.com/subcat/html" title="Topic &quot;HTML&quot; (40% popularity)">HTML</a></li>
+                    <li class="tagcloud30"><a href="/web/20090220003702/http://www.sitepoint.com/subcat/other-technologies" title="Topic &quot;IIS Configuration&quot; (30% popularity)">IIS Configuration</a></li>
+                    <li class="tagcloud35"><a href="/web/20090220003702/http://www.sitepoint.com/subcat/usability" title="Topic &quot;Information Architecture&quot; (35% popularity)">Information Architecture</a></li>
+                    <li class="tagcloud25"><a href="/web/20090220003702/http://www.sitepoint.com/subcat/php-news" title="Topic &quot;Interviews&quot; (25% popularity)">Interviews</a></li>
+                    <li class="tagcloud35"><a href="/web/20090220003702/http://www.sitepoint.com/subcat/java" title="Topic &quot;Java and J2EE&quot; (35% popularity)">Java and J2EE</a></li>
+                    <li class="tagcloud55"><a href="/web/20090220003702/http://www.sitepoint.com/subcat/javascript" title="Topic &quot;JavaScript&quot; (55% popularity)">JavaScript</a></li>
+                    <li class="tagcloud25"><a href="/web/20090220003702/http://www.sitepoint.com/subcat/legal" title="Topic &quot;Legal Issues&quot; (25% popularity)">Legal Issues</a></li>
+                    <li class="tagcloud100"><a href="/web/20090220003702/http://www.sitepoint.com/subcat/php-tutorials" title="Topic &quot;MySQL&quot; (100% popularity)">MySQL</a></li>
+                    <li class="tagcloud25"><a href="/web/20090220003702/http://www.sitepoint.com/subcat/php-news" title="Topic &quot;MySQL News&quot; (25% popularity)">MySQL News</a></li>
+                    <li class="tagcloud25"><a href="/web/20090220003702/http://www.sitepoint.com/subcat/php-reviews" title="Topic &quot;MySQL Reviews and Apps&quot; (25% popularity)">MySQL Reviews and Apps</a></li>
+                    <li class="tagcloud20"><a href="/web/20090220003702/http://www.sitepoint.com/subcat/promotions" title="Topic &quot;Other Promotions&quot; (20% popularity)">Other Promotions</a></li>
+                    <li class="tagcloud25"><a href="/web/20090220003702/http://www.sitepoint.com/subcat/perl" title="Topic &quot;Perl&quot; (25% popularity)">Perl</a></li>
+                    <li class="tagcloud100"><a href="/web/20090220003702/http://www.sitepoint.com/subcat/php-tutorials" title="Topic &quot;PHP&quot; (100% popularity)">PHP</a></li>
+                    <li class="tagcloud20"><a href="/web/20090220003702/http://www.sitepoint.com/subcat/privacy" title="Topic &quot;Privacy and Trust&quot; (20% popularity)">Privacy and Trust</a></li>
+                    <li class="tagcloud20"><a href="/web/20090220003702/http://www.sitepoint.com/subcat/ruby" title="Topic &quot;Rails&quot; (20% popularity)">Rails</a></li>
+                    <li class="tagcloud20"><a href="/web/20090220003702/http://www.sitepoint.com/subcat/ruby" title="Topic &quot;Ruby&quot; (20% popularity)">Ruby</a></li>
+                    <li class="tagcloud25"><a href="/web/20090220003702/http://www.sitepoint.com/subcat/searchmarketing" title="Topic &quot;Search Marketing&quot; (25% popularity)">Search Marketing</a></li>
+                    <li class="tagcloud25"><a href="/web/20090220003702/http://www.sitepoint.com/subcat/server-side" title="Topic &quot;Server Side Essentials&quot; (25% popularity)">Server Side Essentials</a></li>
+                    <li class="tagcloud35"><a href="/web/20090220003702/http://www.sitepoint.com/subcat/site-planning" title="Topic &quot;Site Planning&quot; (35% popularity)">Site Planning</a></li>
+                    <li class="tagcloud40"><a href="/web/20090220003702/http://www.sitepoint.com/subcat/software-tutorials" title="Topic &quot;Software&quot; (40% popularity)">Software</a></li>
+                    <li class="tagcloud25"><a href="/web/20090220003702/http://www.sitepoint.com/subcat/traffic-analysis" title="Topic &quot;Traffic Analysis&quot; (25% popularity)">Traffic Analysis</a></li>
+                    <li class="tagcloud50"><a href="/web/20090220003702/http://www.sitepoint.com/subcat/design-tips" title="Topic &quot;Tricks&quot; (50% popularity)">Tricks</a></li>
+                    <li class="tagcloud35"><a href="/web/20090220003702/http://www.sitepoint.com/subcat/usability" title="Topic &quot;Usability&quot; (35% popularity)">Usability</a></li>
+                    <li class="tagcloud40"><a href="/web/20090220003702/http://www.sitepoint.com/subcat/xml" title="Topic &quot;Web Services&quot; (40% popularity)">Web Services</a></li>
+                    <li class="tagcloud20"><a href="/web/20090220003702/http://www.sitepoint.com/subcat/work-smarter" title="Topic &quot;Work Smarter&quot; (20% popularity)">Work Smarter</a></li>
+                    <li class="tagcloud40"><a href="/web/20090220003702/http://www.sitepoint.com/subcat/html" title="Topic &quot;XHTML&quot; (40% popularity)">XHTML</a></li>
+                    <li class="tagcloud40"><a href="/web/20090220003702/http://www.sitepoint.com/subcat/xml" title="Topic &quot;XML&quot; (40% popularity)">XML</a></li>
+                </ul>
+    </div>
+
+</div>
+</div><!-- end content -->
+
+
+
+
+
+<div id="footer">
+
+<div id="tertiary">
+
+<ul>
+	<li><a href="/web/20090220003702/http://www.sitepoint.com/mediakit">Advertise</a> </li>
+	<li><a href="/web/20090220003702/http://www.sitepoint.com/about/">About Us</a> </li>
+	<li><a href="/web/20090220003702/http://www.sitepoint.com/contact">Contact Us</a> </li>
+	<li><a href="/web/20090220003702/http://www.sitepoint.com/sitemap" accesskey="3">Site Map</a> </li>
+	<li><a href="/web/20090220003702/http://www.sitepoint.com/about/writeforus">Write For Us</a> </li>
+	<li><a href="/web/20090220003702/http://www.sitepoint.com/syndication/">RSS</a> </li>
+	<li><a href="/web/20090220003702/http://www.sitepoint.com/newsletter/">Newsletters</a> </li>
+	<li><a href="/web/20090220003702/http://www.sitepoint.com/search/search.php" accesskey="4">Search</a> </li>
+	<li><a href="/web/20090220003702/http://www.sitepoint.com/privacy/" accesskey="8">Privacy</a> </li>
+	<li><a href="/web/20090220003702/http://www.sitepoint.com/glossary.php?q=A">Glossary</a> </li>
+	<li><a href="/web/20090220003702/http://www.sitepoint.com/about/terms.php/">Terms &amp; Conditions</a> </li>
+	<li><a href="/web/20090220003702/http://www.sitepoint.com/about/jobs/">Jobs</a> </li>
+</ul>
+
+</div>
+<p>The contents of this webpage are copyright &copy; 1998-2009
+SitePoint Pty. Ltd. All Rights Reserved.</p>
+
+<div>
+<a href="/web/20090220003702/http://www.sitepoint.com.au/"  title="Visit our development site">Web Design &amp; Development by SitePoint, Melbourne, Australia</a> - <a href="/web/20090220003702/http://www.99designs.com/" >Logo Design, Web page Design - 99designs.com </a>
+</div>
+
+</div><!-- end footer -->
+
+			<script src="/web/20090220003702js_/http://ads.aws.sitepoint.com/adjs.php?region=205&amp;did=adflexible" type="text/javascript"></script>
+			<script src="/web/20090220003702js_/http://ads.aws.sitepoint.com/adjs.php?region=185&amp;did=ad250x250upper" type="text/javascript"></script>
+			<script src="/web/20090220003702js_/http://ads.aws.sitepoint.com/adjs.php?region=209&amp;did=ad250x250middle" type="text/javascript"></script>
+			<script src="/web/20090220003702js_/http://ads.aws.sitepoint.com/adjs.php?region=207&amp;did=ad250x250lower" type="text/javascript"></script>
+			<script src="/web/20090220003702js_/http://ads.aws.sitepoint.com/adjs.php?region=190&amp;did=featuread" type="text/javascript"></script>
+			<script src="/web/20090220003702js_/http://ads.aws.sitepoint.com/adjs.php?region=186&amp;did=ad125x125left" type="text/javascript"></script>
+			<script src="/web/20090220003702js_/http://ads.aws.sitepoint.com/adjs.php?region=187&amp;did=ad125x125right" type="text/javascript"></script>
+			<script src="/web/20090220003702js_/http://ads.aws.sitepoint.com/adjs.php?region=188&amp;did=ad120x600left" type="text/javascript"></script>
+			<script src="/web/20090220003702js_/http://ads.aws.sitepoint.com/adjs.php?region=189&amp;did=ad120x600right" type="text/javascript"></script>
+				<script src="/web/20090220003702js_/http://www.sitepoint.com/popup/popupjs.php?zoneid=1" type="text/javascript"></script>
+	<script src="/web/20090220003702js_/http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-30131-1";
+urchinTracker();
+</script>
+
+
+
+</body>
+</html>
+
+
+
+
+
+<!--
+     FILE ARCHIVED ON 0:37:02 Feb 20, 2009 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 10:59:52 Dec 21, 2016.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
