@@ -27,5 +27,9 @@ class Controller
     @cookbook.remove_recipe(recipe_index)
     @view.removed_message
   end
+
+  def search_online
+
+  end
 end
 
