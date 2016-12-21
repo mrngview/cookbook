@@ -8,15 +8,16 @@ class Router
 
  def run
   while @stop == false
-  puts "WELCOME TO COOKBOOK"
-  puts "-------------------"
-  display_options
-  option = gets.chomp.to_i
+    puts ""
+    puts "WELCOME TO COOKBOOK"
+    puts "-------------------"
+    display_options
+    option = gets.chomp.to_i
     case option
     when 1 then @controller.list
     when 2 then @controller.create
     when 3 then @controller.destroy
-    #when 4 then go en search on Marmiton
+    when 4 then @controller.search_online
     when 5 # If you have several statements, "then" is not mandatory
      puts "Thanks for using cookbook"
      @stop = true
@@ -31,7 +32,7 @@ class Router
   puts "1- List"
   puts "2- Create"
   puts "3- Destroy"
-  puts "4- Import recipes from [Marmiton"
+  puts "4- Import recipes from Marmiton"
   puts "5- Exit"
  end
 end

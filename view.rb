@@ -33,4 +33,28 @@ class View
   def removed_message
     puts "The recipe has been removed!"
   end
+
+  def ask_ingredient
+    puts "Type an ingredient: "
+    return gets.chomp
+  end
+
+  def print_result(ingredient, recipes_array)
+    counter = 1
+    puts "Looking for \"#{ingredient.upcase}\" on Marmiton..."
+    sleep 2
+    puts "#{recipes_array.size} results found!"
+    puts ""
+    recipes_array.each do |recipe|
+      puts "#{counter}- #{recipe.name}
+                        Preparation time: #{recipe.time}"
+      counter += 1
+    end
+  end
+
+  def select_to_import
+    puts "Please type a number to choose which recipe to import: "
+    num = gets.chomp.to_i
+    return num -1
+  end
 end

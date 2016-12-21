@@ -1,9 +1,11 @@
 require_relative "view"
+require_relative "marmiton"
 
 class Controller
   def initialize(cookbook)
     @cookbook = cookbook
     @view = View.new
+    @marmiton = Marmiton.new
   end
 
   def list
@@ -29,7 +31,12 @@ class Controller
   end
 
   def search_online
-
+    ingredient = @view.ask_ingredient
+    marmiton_array = @marmiton.search(ingredient) # Returns an array with the searched recipes
+    @view.print_result(ingredient,marmiton_array)
+    recipe_index = @view.select_to_import # Returns index of recipe in marmiton array
+    @cookbook.add_recipe(marmiton_array[recipe_index])
   end
 end
+
 
