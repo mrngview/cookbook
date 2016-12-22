@@ -3,7 +3,16 @@ class View
   def list_all(recipes) # Array of recipe objects
     counter = 1
     recipes.each do |recipe|
-      puts "#{counter}- #{recipe.name} #{recipe.description}"
+      if recipe.time == nil || recipe.time == ""
+        puts "#{counter}-Name: #{recipe.name}
+  Description: #{recipe.description}
+  "
+      else
+        puts "#{counter}-Name: #{recipe.name}
+  Description: #{recipe.description}
+  Preparation time: #{recipe.time}
+  "
+      end
       counter += 1
     end
   end
@@ -13,7 +22,9 @@ class View
     name = gets.chomp
     puts "insert description: "
     description = gets.chomp
-    return [name, description]
+    puts "Insert preparation time"
+    time = gets.chomp
+    return [name, description, time]
   end
 
   def remove
@@ -46,8 +57,9 @@ class View
     puts "#{recipes_array.size} results found!"
     puts ""
     recipes_array.each do |recipe|
-      puts "#{counter}- #{recipe.name}
-                        Preparation time: #{recipe.time}"
+      puts "#{counter}-Name: #{recipe.name}
+    Preparation time: #{recipe.time}
+  "
       counter += 1
     end
   end

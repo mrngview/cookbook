@@ -13,7 +13,7 @@ class Cookbook
 
   def load_recipes # La llamamos en initialize para que nos de las recetas del csv en un array
     CSV.foreach(@csv_file) do |row| #Parse the file
-    recipe = Recipe.new(row[0], row[1]) #store name and desc. in recipe object
+    recipe = Recipe.new(row[0], row[1], row[2]) #store name and desc. in recipe object
     @recipes << recipe #push recipe in []
     end
     return @recipes #return array of recipes objects
@@ -32,7 +32,7 @@ class Cookbook
   def store_to_csv
     CSV.open(@csv_file, 'wb') do |csv|
       @recipes.each do |recipe|
-        csv << [recipe.name, recipe.description]
+        csv << [recipe.name, recipe.description, recipe.time]
       end
     end
   end
@@ -42,3 +42,5 @@ class Cookbook
   end
 
 end
+
+

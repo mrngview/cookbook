@@ -15,7 +15,7 @@ class Controller
 
   def create
     recipe_array = @view.add # array [name, description]
-    recipe = Recipe.new(recipe_array[0], recipe_array[1]) # transformer array en Recipe object
+    recipe = Recipe.new(recipe_array[0], recipe_array[1], recipe_array[2]) # transformer array en Recipe object
     if @cookbook.add_recipe(recipe) #Recipe object
       @view.congrats
     else
@@ -35,7 +35,7 @@ class Controller
     marmiton_array = @marmiton.search(ingredient) # Returns an array with the searched recipes
     @view.print_result(ingredient,marmiton_array)
     recipe_index = @view.select_to_import # Returns index of recipe in marmiton array
-    @cookbook.add_recipe(marmiton_array[recipe_index])
+    @cookbook.add_recipe(marmiton_array[recipe_index]) # Imports the searched recipe to the csv file
   end
 end
 

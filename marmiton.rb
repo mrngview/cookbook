@@ -10,7 +10,7 @@ class Marmiton
     doc.search(".m_contenu_resultat").each do |node|
       title = node.search(".m_titre_resultat > a").text
       time = node.search(".m_detail_time > div").text.strip
-      recipe = Recipe.new(title, nil)
+      recipe = Recipe.new(title, nil, nil)
       recipe.time = time
       recipes << recipe
     end
